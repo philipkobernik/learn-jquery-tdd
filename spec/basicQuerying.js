@@ -7,7 +7,7 @@ describe("jquery basic querying", function() {
   // This beforeEach code block is executed by jasmine before each test is executed.
   beforeEach(function() {
 
-    templateString = "<div id='main'>";
+    templateString = "<div id='template'>";
     templateString += "<h1>jQuery TDD</h1>";
     templateString += "<p>This is an experiment to test whether exposure to <span class='madlib'>TDD methodology</span> can benefit learning jQuery.</p>";
     templateString += "<p>For convenience, I have used Jquery's append method to insert this bit of html on the page.</p>";
@@ -18,7 +18,7 @@ describe("jquery basic querying", function() {
 
     // Before each test, remove the html inserted from previous test run
     // then append our jquery object
-    $('div#main').remove()
+    $('div#template').remove()
     $('body').append($template);
 
   });

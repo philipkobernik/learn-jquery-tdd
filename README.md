@@ -47,7 +47,7 @@ I've taken the liberty to append this html to the body of the spec runner html p
 
 From the spec runner page, open your web console and execute jQuery calls like so:
 
-    $('div#main').find('p').hide()
+    $('div#template').find('p').hide()
     
 ### Finished?
 
